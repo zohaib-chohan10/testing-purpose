@@ -1,0 +1,1854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+    body{
+      background-color: #fff;
+    }
+    
+    a {
+      text-decoration: none;
+      color:#000;
+      transition: all 0.5s;
+    }
+    
+    .article-by a:hover {
+      color: black;
+    }
+    
+    a:hover {
+      color: #bf0a26;
+    }
+    
+    .header-ad #div-gpt-lb-1 {
+      max-height: 245px!important;
+    }
+    
+    .custom-row{
+    display: flex;
+    }
+    .story-scale .featured-image-global{
+      overflow: hidden;
+    }
+    .story-scale .featured-image-global img{
+      /* transition: .9s ease; */
+      transition: transform 0.25s ease 0s, opacity 0.5s ease 0s;
+    }
+    .story-scale:hover .featured-image-global img{
+        transition: transform 0.25s ease 0s, opacity 0.5s ease 0s;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        
+    }
+    .story-scale .feed-content{
+      transition:.3s;
+      border-top: 5px solid #fff;
+    }
+    .story-scale:hover .feed-content{
+      border-top: 5px solid #ed1b24;
+      transition:.3s;
+    }
+    .width-60{
+      width: 60%;
+    }
+    
+    .width-40{
+      width: 40%;
+    }
+    
+    .width-30{
+      width: 30%;
+    }
+    
+    a:hover {
+      color: white;
+    }
+    
+    hr {
+      height: 4px !important;
+      width: 60px;
+      color: #d7061d;
+      opacity: 1;
+    }
+    
+    svg.home-icon {
+      height: 20px;
+      width: 20px;
+      margin-bottom: 5px;
+    }
+    
+    .home-anchor span {
+      font-size: 18px;
+      top: 5px;
+      left: -5px;
+      color: black;
+      font-weight: 500;
+      display: none;
+    }
+    
+    .float-right{
+    float:right;
+    }
+    
+    .story-social-icons {
+      text-align: right;
+    }
+    
+    .hr-line {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .story-inner-caption {
+      padding: 0;
+      font-weight: 700;
+      height: 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      flex-basis: auto;
+        flex: 1 1 0;
+    }
+    
+    .story-inner-caption span {
+      margin-right: 10px;
+    }
+    
+    .nav-magazine {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    
+    .GeneralContainer{
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        padding: 0 16px 60px;
+    }
+    
+    .padding-bottom-2 {
+        padding-bottom: 25px;
+    }
+    
+    .home-icon .b{ 
+      fill: #fff;
+    }
+    
+    .header-banner {
+      width: 100%;
+      height: 48px;
+      background-color: black;
+      padding: 0 95px;
+    }
+    
+    .header-banner .hom-icn {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left;
+    }
+    
+    .breadcrumb-tmag {
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    .breadcrumb-tmag .breadcrumb-item , .breadcrumb-tmag li a {
+      color:white;
+    }
+    
+    .header-banner .t-mag-logo {
+      width: 49%;
+      display: none;
+    }
+    
+    .explore-feeds{
+        width: 100%;
+        padding-top: 60px;
+        /* padding-bottom: 60px; */
+        background: #fff;
+    }
+    .lts-magzine{
+      padding-bottom: 55px !important;
+    }
+    
+    .heading-magazine {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: 3.5px;
+        padding-top: 0;
+        padding-bottom: 10px;
+        line-height: 46px;
+        margin-bottom: 0;
+        /* padding-left: 30px; */
+    }
+    
+    .header-banner .heading-magazine {
+      text-transform: capitalize;
+    }
+    
+    .s-card{
+        background-color: white;
+        /* height: 200px; */
+    }
+    
+    .s-card article{
+      height: 423px;
+    }
+    
+    
+    .s-card a img {
+      width: 100%;
+    }
+    
+    .feed-content span {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #555555;
+      letter-spacing: 3px;
+      margin-right: 10px;
+    }
+    
+    /* Detail page start  */
+    
+    .header-container {
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+    .l-magzine .item .featured-image-global {
+      height: 380px;
+      display: flex;
+      align-items: center;
+    } 
+    .l-magzine .item {
+      /* height: 380px; */
+    }
+    .l-magzine .owl-carousel .decription p{
+      word-break: break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        font-size: 16px;
+        max-height: 77px;
+        color: #d7d4d4;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        font-weight: 600;
+        margin-bottom: 0;
+        line-height: 1.5;
+        text-transform: capitalize;
+        letter-spacing: .1px;
+        -webkit-font-smoothing: antialiased;
+    }
+    .pb-47{
+      padding-bottom: 47px !important;
+    }
+    button.owl-prev {
+      position: relative;
+      left: -40px;
+    }
+    button.owl-next {
+      position: absolute;
+      right: -90px;
+    }
+    .fte{
+      line-height: 33px;
+    }
+    button.owl-prev span{
+      color: transparent;
+      display: block;
+        height: 40px;
+        background-position: center;
+        width: 30px;
+      background-image: url('https://i.tribune.com.pk/media/images/magazine+thumbs/arrow-left.svg');
+    }
+    button.owl-next span{
+      color: transparent;
+      display: block;
+        height: 40px;
+        background-position: center;
+        width: 30px;
+      background-image: url('https://i.tribune.com.pk/media/images/magazine+thumbs/arrow-right.svg');
+    }
+    .l-magzine .item .featured-image-global{
+      transition: transform 0.25s ease 0s, opacity 0.5s ease 0s;
+      overflow: hidden;
+      border-top: 19px solid #ee1b24;
+      border-bottom: 19px solid #ee1b24;
+      border-left: 16px solid #ee1b24;
+      border-right: 16px solid #ee1b24;
+      height: 417px;
+      background-image: url('https://stage-cdn.tribune.com.pk/media/images/mag.jpg');
+      background-size: cover;
+      transition: border 0.15s linear;
+    
+    }
+    .owl-item:hover .featured-image-global{
+      transition: transform 0.25s ease 0s, opacity 0.5s ease 0s;
+      border-top: 3px solid #ee1b24;
+      border-bottom: 3px solid #ee1b24;
+      border-left: 5px solid #ee1b24;
+      border-right: 5px solid #ee1b24;
+      transition: border 0.15s linear;
+    }
+    
+    .l-magzine .owl-carousel .owl-item img {
+      transition: transform 0.25s ease 0s, opacity 0.5s ease 0s;
+    }
+    .l-magzine .owl-carousel .owl-item:hover img {
+      -webkit-transform: scale(1.1) translateZ(0);
+      transform: scale(1.1) translateZ(0);
+      transition: transform 0.25s ease 0s, opacity 0.5s ease 0s;
+    }
+    .l-magzine .owl-carousel .owl-item img {
+      display: block;
+        height: 100%;
+        box-shadow: 0 0 11px 5px #363636;
+        /* object-fit: cover; */
+        image-rendering: -webkit-optimize-contrast;
+        object-position: top center;
+    }
+    .detailpage-full-img {
+      background-image: url(../images/deatil-page-header.jpg);
+      background-size: cover;
+      height: 80vh;
+      background-position: center center;
+    }
+    
+    .featured-image-global {
+      /* height: 230px; */
+    }
+    
+    .detailpage-full-img .feed-content span{
+      color: white;
+      font-size: 23px;
+      margin: 0;
+    }
+    
+    .detailpage-full-img .feed-content span a{
+      background-color: #fff;
+      color: #000;
+      font-size: 13px;
+      font-weight: bolder;
+      padding: 0 8px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 6px;
+      height: 19px;
+    }
+    
+    .vertical-line {
+      display: inline-block;
+      width: 3px;
+      background: red;
+      height: 18px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    
+    .detailpage-full-img .feed-content {
+      padding-top: 43px;
+      width: 60%;
+    }
+    
+    .detailpage-full-img .feed-content h3 {
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 35px;
+    }
+    
+    .detailpage-full-img .feed-content p{
+      color: #e8e8e8;
+      font-size: 20px;
+    }
+    
+    .bg-shade-2{
+      background: linear-gradient( 360deg ,transparent,#000000);
+      height: 100%;
+      z-index: 1;
+      top: 0;
+    }
+    
+    
+    .content-main{
+      width: 75%;
+      height: auto;
+      padding-top: 30px;
+      padding-left: 150px;
+      padding-right: 150px;
+    
+    }
+    
+    .content-img img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .sidebar-section{
+      width: 25%;
+    }
+    
+    .content-main h3{
+      color: #2b2c2d;
+      line-height: 16px;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      margin: 0 0 15px;
+      text-transform: uppercase;
+    }
+    
+    .article-by span, .published-date span{
+      text-decoration: none;
+      margin-right: 8px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    
+    .published-date span{
+      color: gray;
+    }
+    
+    .article-header {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #d4d4d4;
+      margin-bottom: 15px;
+    }
+    
+    ul.social-links {
+      list-style: none;
+      display: flex;
+    }
+    .stor.story-scale:nth-child(n+5){
+      padding-bottom: 0;
+    }
+    
+    /* Detail page end  */
+    
+    .logo img {
+      height: 37px;
+      width: 201px;
+    }
+    
+    .header-banner .GeneralContainer1 img.t-magzn-logo{
+      display: none;
+    }
+    
+    .feed-content {
+      padding: 20px;
+      padding-top: 10px;
+      position: relative;
+    }
+    article.s-card.Layout-vertical .feed-content h3 {
+        height: 80px;
+        max-height: 80px;
+        letter-spacing: 0.1px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .feed-content h3 {
+      padding-bottom: 4px;
+        color: black;
+        font-size: 22px;
+    
+        margin-top: 5px;
+        line-height: 1.273;
+        margin-bottom: 5px;
+       
+    }
+    .feed-content .read-btn:nth-child(1){
+      top: 110px;
+      position: absolute;
+    }
+    
+    
+    .feed-content .read-btn {
+      bottom: 5px;
+      /* position: absolute; */
+      margin-top: 10px;
+      color: black;
+      display: flex;
+      align-items: end;
+    }
+    .feed-content .para-icon{
+      width: 22px;
+      height: 16px;
+      position: relative;
+      margin-right: 5px;
+      display: flex;
+    }
+    
+    
+    
+    .feed-content .para-icon span{
+      width: 10px;
+      height: 1px;
+      background-color: #000;
+      position: absolute;
+      top: 0;
+      bottom: 5px;
+      margin: auto;
+    }
+    .feed-content .para-icon1 span{
+      background-color: #fff;
+    }
+    
+    .feed-content .para-icon span:nth-child(2){
+      top: 6px;
+    }
+    .feed-content .para-icon span:nth-child(3){
+      top: 12px;
+    }
+    .feed-content .para-icon span:nth-child(4){
+      top: 18px;
+    }
+    
+    .featured-story-wrapper .bg-shade {}
+    
+    .owl-carousel .owl-stage-outer {
+      z-index: 9;
+    }
+    .s-card article .m-content{
+    
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      height: 100%;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      overflow: hidden;
+      padding: 20px;
+    }
+    
+    .featured-story-wrapper , .wrapper-btn{
+      position: relative;
+    }
+    
+    .wrapper-btn{
+      bottom: 100px;
+    }
+    
+    .featured-story-wrapper .bg-shade{
+      background: linear-gradient( 179deg ,transparent,#000000bf);
+      position: absolute;
+      height: 100%;
+      z-index: 1;
+      top: 0;
+    }
+    
+    
+    .featured-story {
+      background-image: url(../images/featured-story.png);
+      background-size: cover;
+      background-position: bottom ;
+      width: 100%;
+      height: 705px;
+    }
+    
+    
+    .feed-content.featured-feed {
+      position: absolute;
+      bottom: 30px;
+      z-index: 1;
+    }
+    
+    
+    .featured-feed span, .featured-feed h3,.featured-feed .read-btn {
+      color: white;
+    }
+    
+    
+    .featured-feed h3 {
+      font-size: 38px;
+    }
+    
+    .bg-shade{
+      background: linear-gradient( -179deg ,transparent,#000);
+      width: 100%;
+      height: 705px;
+      position: absolute;
+    }
+    
+    .featured-story .GeneralContainer{
+      height: 100%;
+    }
+    
+    .m-content {
+      bottom: 75px;
+      position: absolute;
+    
+    }
+    
+    .Layout-vertical{
+      height: 430px;
+      border: 1px solid #e6e6e6;
+    }
+    
+    
+    .date {
+      color: white;
+      text-transform: uppercase;
+      font-size: 20px;
+    
+    }
+    
+    .featured-story .m-content p{
+      color: white; 
+    }
+    
+    .magazine-btn {
+      font-weight: 700;
+      letter-spacing: 2px;
+      font-size: 11px;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      border: 1px solid white;
+      padding: 15px 20px 15px 20px;
+    }
+    
+    
+    section.feeds {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      background-color: white;
+    
+    }
+    
+    .featured-from-editor {
+      background-color: white;
+      padding-top: 60px;
+      padding-bottom: 0px;
+    }
+    
+    .featured-from-editor img {
+      box-shadow: 9px 8px #d7061d;
+        width: 100%;
+        height: 333px;
+    }
+    .featured-from-editor .GeneralContainer{
+      padding: 10px 0 30px;
+    }
+    
+    .featured-from-editor .hr-line{
+      height: 20px;
+    }
+    
+    .featured-from-editor .heading-magazine{
+      margin-bottom: 0;
+    }
+    
+    .wrapper{
+      display: flex;
+    }
+    
+    .featured-from-editor .m-content{
+      color: black;
+      position: relative;
+      padding-left: 40px;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .featured-from-editor .m-content .heading-magazine {
+      text-transform: inherit;
+      font-size: 28px;
+    }
+    
+    .magazine-showcase{
+      background-color: #000;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    
+    .magazine-showcase .owl-dots {
+      display: none;
+    }
+    
+    .decription h3 {
+      color: white;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-top: 15px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 3px;
+      padding-bottom: 0;
+    }
+    
+    .magazine-showcase .owl-carousel img{
+      /* border: 6px solid #d7061d; */
+    }
+    .owl-nav {
+      position: absolute;
+      top: -39px;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+    button.owl-prev{
+      left: -1%;
+      top: 0;
+      position: absolute;
+      font-size: 35px;
+    background: transparent;
+    }
+    button.owl-next{
+      right: -70px;
+      top: 0;
+      position: absolute;
+    }
+    button.owl-prev,
+    button.owl-next {
+      font-size: 35px !important;
+      /* background: transparent; */
+      background: linear-gradient(90deg,rgba(0,0,0,.75),transparent);
+      height: 100%;
+      color: #fff;
+      border: 0;
+      z-index: 9;
+    }
+    .showcase-container {
+      padding-left: 7%;
+      padding-right: 7%;
+    }
+    .showcase-container-2 {
+      padding-left: 1%;
+      padding-right: 1%;
+    }
+    
+    .showcase-btn {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .showcase-btn .magazine-btn {
+      background-color: #d7061d;
+      color: white;
+      border: none;
+    }
+    
+    footer{
+      background-color: black;
+      padding-top: 70px;
+      padding: 30px 85px 0;
+      margin: 30px 0 0;
+    }
+    
+    .footer-headings {
+      color: white;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+    .l-magzine {
+      padding-bottom: 0 !important;
+    }
+    footer ul {
+      list-style: none;
+      padding-left: 0;
+      padding-top: 20px;
+    }
+    
+    footer ul li a{
+      color: white;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+    }
+    
+    .showcase-container .owl-carousel .owl-nav.disabled{
+      display: block !important;
+    }
+    .showcase-container-2 .owl-carousel .owl-nav.disabled{
+      display: block !important;
+    }
+    
+    .showcase-container .owl-nav.disabled button{
+      background: transparent !important;
+      border: none !important;
+    }
+    .showcase-container-2 .owl-nav.disabled button{
+      background: transparent !important;
+      border: none !important;
+    }
+    
+    .showcase-container .owl-nav.disabled button span {
+      color: #969696;
+    }
+    
+    .showcase-container .owl-nav.disabled {
+      left: -85px;
+      width: 110%;
+      position: absolute;
+      top: 253px;
+    }
+    .showcase-container-2 .owl-nav.disabled button span {
+      color: #969696;
+    }
+    
+    .showcase-container-2 .owl-nav.disabled {
+      left: -85px;
+      width: 110%;
+      position: absolute;
+      top: 253px;
+    }
+    
+    
+    .header-banner .GeneralContainer1 {
+      padding-top: 9px;
+      padding-bottom: 9px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .header-banner .GeneralContainer1 img.t-magzn-logo{
+      width: 190px;
+      height: 30px;
+    }
+    
+    
+    
+    .content-main img {
+      width: 100%;
+    }
+    .fb {
+      width: 30px;
+      height: 30px;
+      background: url(https://i.tribune.com.pk/assets/images/css_sprites.png) -134px -296px;
+    }
+    .twitter {
+      width: 30px;
+      height: 30px;
+      background: url(https://i.tribune.com.pk/assets/images/css_sprites.png) -234px -296px;
+    }
+    .youtube {
+      width: 30px;
+      height: 30px;
+      background: url(https://i.tribune.com.pk/assets/images/css_sprites.png) -334px -296px;
+    }
+    .in {
+      width: 30px;
+      height: 30px;
+      background: url(https://i.tribune.com.pk/assets/images/css_sprites.png) -184px -296px;
+    }
+    .en {
+      width: 30px;
+      height: 30px;
+      background: url(https://i.tribune.com.pk/assets/images/css_sprites.png) -447px -173px;
+    }
+    ul.footer-social-icons {
+      display: inline-flex;
+    }
+    ul.footer-social-icons li {
+      display: inline;
+      margin-right: 8px;
+    }
+    .story-social-icons a {
+      color: black;
+      margin-left: 5px;
+    }
+    ul.playstore {
+      display: flex;
+    }
+    .bg-white {
+      background-color: #f9f9f9!important;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .header-ad {
+      max-width: 900px !important;
+      max-height: 245px !important;
+      margin: auto;
+      background-color: #fff;
+    }
+    
+    .s-card a img {
+      width: 100%;
+      /* height: 100%; */
+      height: 230px;
+      object-fit: cover;
+    }
+    
+    .featured-story-wrapper .featured-image-global {
+      height: 100%;
+    }
+    
+    /* .s-card a .featured-story-wrapper .featured-image-global img{
+      height: 100%;
+    } */
+    
+    .sidebar-ad {
+      display: none;
+    }
+    
+    .sidebar-ad.ad-sticky{
+      display: block;
+      position: fixed;
+      top: 15px;
+      right: 80px;
+      z-index: -1;
+    }
+    .feeds .GeneralContainer{
+      padding-bottom: 0;
+    }
+    .header-banner{
+      border-bottom: 1px solid #fff;
+    }
+    
+    .custom-row .content-main .location-names{
+      display: inline-block;
+      float: left;
+      padding-right: 11px;
+    }
+    
+    li.breadcrumb-item.active{
+      font-weight: 700;
+    }
+    
+    .navbar-brand{
+      margin-right: 0;
+    }
+    
+    .back-tribune {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left;
+      margin-top: 2px;
+    }
+    
+    .back-tribune a {
+      color: grey;
+    }
+    
+    .back-tribune a:hover {
+      color: white;
+    }
+    
+    .back-icon {
+      fill: white;
+      width: 22px;
+      height: 22px;
+      margin-bottom: 2px;
+      margin-right: 5px;
+    }
+    .article-by {
+      flex: 0 0 220px;
+      flex-basis: 220px;
+      padding-right: 0;
+    }
+    .story-social-icons {
+      text-align: right;
+      flex: 0 0 117px;
+      flex-basis: 117px;
+    }
+    .article-by {
+      flex: 0 0 225px;
+      flex-basis: 225px;
+      padding-right: 0;
+    }
+    
+    @media screen and (max-width: 1280px){
+        .l-magzine .item .featured-image-global {
+        height: 420px;
+        }
+    }
+    @media screen and (min-width: 1120px){
+        .GeneralContainer {
+            max-width: 1020px;
+            padding: 0 0 60px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px){
+    
+      html, body{
+        overflow-x: hidden;
+      }
+    
+      .showcase-container .owl-nav button{
+        background: transparent !important;
+        border: none !important;
+      }
+    
+    .showcase-container .owl-nav{
+      left: -6%;
+      width: 112%;
+      position: absolute;
+      top: 160px;
+    }
+      .showcase-container-2 .owl-nav button{
+        /* background: transparent !important; */
+        border: none !important;
+      }
+      button.owl-next {
+        right: 4% !important;
+      }
+      button.owl-prev {
+        left: 5%;
+      }
+    
+    .showcase-container-2 .owl-nav{
+      left: -6%;
+      width: 112%;
+      position: absolute;
+      /* top: 160px; */
+    }
+    
+    
+      .featured-story .m-content{
+        width: 90%;
+      }
+    
+      .featured-from-editor img{
+        width: 98.5%;
+      }
+    
+      .featured-story .GeneralContainer {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      .featured-from-editor{
+        padding-bottom: 0;
+      }
+    
+      .detailpage-full-img .feed-content{
+        width: 100%;
+      }
+    }
+    
+    
+    
+    @media screen and (min-width: 520px) and (max-width: 600px){
+      /* .l-magzine .owl-carousel .owl-item img {
+        height: 500px;
+      } */
+      .l-magzine .item .featured-image-global {
+        /* height: 530px; */
+      }
+    }
+    @media screen and (max-width: 900px){
+    
+      .col.col-bottom-gutter-2.col-12.col-sm-12.col-md-6.col-lg-4.padding-bottom-2 {
+         padding: 10px 12px;
+      }
+    
+      .back-icon{
+        width: 19px;
+        height: 19px;
+      }
+    
+      .back-tribune {
+        margin-top: -5px;
+      }
+    
+      .back-tribune a {
+        color: white;
+        font-size: 12px;
+    }
+    
+      .featured-story-wrapper .featured-image-global{
+        height: 480px;
+      }
+    
+      .article-by span, .published-date span{
+        font-size: 12px;
+      }
+    
+      footer{
+        padding: 50px 85px 0;
+      }
+      .featured-from-editor .m-content{
+        padding: 15px;
+      }
+    
+      .showcase-container .owl-carousel .owl-nav{
+        display: none !important;
+      }
+    
+      /* .showcase-container-2 .owl-carousel .owl-nav{
+        display: none !important;
+      } */
+    
+      .header-banner .heading-magazine{
+        padding-top: 21px;
+      }
+    
+      .explore-feeds .heading-magazine{
+        padding-bottom: 15px;
+      }
+    
+    
+    .owl-nav button {
+      position: absolute;
+      top: 50%;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      transition: all 0.3s ease-in-out;
+    }
+    .owl-nav button.owl-prev {
+      left: 0;
+    }
+    .owl-nav button.owl-next {
+      right: 0;
+    }
+    
+    .owl-dots {
+      text-align: center;
+      padding-top: 15px;
+    }
+    .owl-dots button.owl-dot {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      display: inline-block;
+      background: #ccc;
+      margin: 0 3px;
+    }
+    .owl-dots button.owl-dot.active {
+      background-color: #000;
+    }
+    .owl-dots button.owl-dot:focus {
+      outline: none;
+    }
+    .owl-nav button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        /* background: rgba(255, 255, 255, 0.38) !important; */
+    }
+    
+    .content-main p span {
+      font-size: 16px;
+      top: 0;
+    }
+    .owl-nav button:focus {
+        outline: none;
+    }
+    
+    .header-container{
+      padding-left: 20px;
+      padding-right: 10px;
+    }
+    .detailpage-full-img .feed-content h3{
+      font-size: 29px;
+    }
+    
+    .detailpage-full-img .feed-content{
+      width: 100%;
+    }
+    
+    .detailpage-full-img .feed-content span, .detailpage-full-img .feed-content span a{
+      font-size: 16px;
+    }
+    .detailpage-full-img .feed-content span a{
+      margin-bottom: 3px;
+    }
+    
+    .detailpage-full-img .article-header{
+      display: block;
+    }
+    .custom-row {
+      display: block;
+    }
+    .content-main{
+      width: 100%;
+    }
+    
+    .sidebar-section{
+      width: 100%;
+      justify-content: center;
+      display: flex;
+    }
+    
+    
+    
+      .detailpage-full-img {
+        height: 60vh;
+      }
+    
+      .sidebar-ad {
+        position: relative;
+        margin-bottom: 30px;
+      }
+    
+      .hom-icn a{
+        width: 27px;
+        display: flex;
+      }
+    
+      .sidebar-ad.ad-sticky{
+        position: relative;
+        right:0;
+      }
+    
+      .breadcrumb{
+        justify-content: flex-end;
+        margin-bottom: 0;
+      }
+      .breadcrumb-tmag .breadcrumb-item, .breadcrumb-tmag li a{
+        text-align: end;
+        font-size: 11px;
+      }
+    
+      li.breadcrumb-item.active{
+        text-overflow: ellipsis;
+        width: 137px;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    
+      .breadcrumb-item+.breadcrumb-item::before{
+        float: revert;
+      }
+      .header-banner{
+        height: auto;
+      }
+    
+      .feed-content .read-btn:nth-child(1){
+        top: 110px;
+      }
+    
+      .feed-content.featured-feed{
+        bottom:10px;
+      }
+    
+      .content-main{
+        padding-left: 6%;
+        padding-right: 6%;
+      }
+      .header-banner{
+        padding: 0 20px;
+      }
+      .header-banner .hom-icn{
+        width: 49%;
+        padding-bottom: 0;
+      }
+      .header-banner .GeneralContainer1 img.t-magzn-logo{
+        width: 132px;
+        height: 24px;
+      }
+    
+      .header-banner .GeneralContainer1{
+        padding-top: 10px;
+      }
+      .GeneralContainer{
+        padding: 0 0 40px;
+      }
+      .heading-magazine{
+        font-size: 26px;
+      }
+      
+      
+      .featured-from-editor .m-content{
+        padding: 15px 37px;
+      }
+      .featured-from-editor .m-content .heading-magazine{
+        font-size: 25px;
+      }
+      .feeds .GeneralContainer{
+        padding-bottom: 0;
+      }
+      footer{
+        margin: 0;
+        padding: 50px 15px 0 5px;
+      }
+      section.feeds{
+        padding-top: 30px;
+      }
+      .featured-feed h3{
+        font-size: 17px;
+      }
+      .vertical-line{
+        margin-bottom: -3px;
+      }
+    
+      .detailpage-full-img .feed-content span{
+        font-size: 23px;
+      }
+      .detailpage-full-img .feed-content span a{
+        font-size: 13px;
+      }
+    
+      .Layout-vertical{
+        height: auto;
+        padding: 20px 0;
+      }
+      .feed-content .read-btn{
+        top:auto;
+      }
+      .featured-from-editor .GeneralContainer{
+        padding-bottom: 0;
+      }
+      .detailpage-full-img .feed-content h3{
+        font-size: 23px;
+      }
+      .detailpage-full-img .feed-content p{
+        font-size: 17px;
+      }
+      .featured-story-wrapper .bg-shade{
+        height: 100%;
+      }
+      svg.home-icon{
+        height: 14px;
+        width: 14px;
+        margin-bottom: 5px;
+    }
+    
+    .Layout-vertical{
+        padding: 0;
+    }
+    
+    .feed-content{
+         padding: 20px 20px 20px;
+         min-height: 250px;
+    }
+    
+    .featured-story-wrapper .bg-shade{
+         height: 100%;
+    }
+    .logo img {
+      height: auto;
+      width: 131px;
+    }
+    .featured-from-editor img{
+      width: 91.5%;
+      box-shadow: 3px 3px #d7061d;
+      height: 247px;
+    }
+    .custom-row .content-main{
+      padding-top: 20px;
+    }
+    .custom-row .content-main .published-date{
+      margin-top: 0.4rem;
+      margin-bottom: 0.4rem !important;
+    }
+    footer ul li a{
+      font-size: 9.5px;
+    }
+    .featured-image-global{
+      text-align: center;
+    }
+    .feed-content h3{
+      display: block;
+    }
+    .footer-headings{
+      font-size: 11px;
+    }
+    ul.footer-social-icons li:nth-child(1){
+      margin-left: 0;
+    }
+    .footer-flw-us{
+      text-align: center;
+    }
+    ul.footer-social-icons {
+      display: flex;
+      justify-content: center;
+    }
+    .footer-heading1{
+      padding-left: 14px;
+    }
+    .footer-heading-ul{
+      padding-left: 14px;
+    }
+    footer .GeneralContainer{
+      padding: 0 0 20px;
+    }
+    .explore-feeds{
+      padding-top: 10px;
+      padding: 10px 8px;
+    }
+    .explore-feeds .padding-bottom-2{
+      padding-bottom: 9px;
+      padding-top: 7px;
+    }
+    .padding-bottom-2{
+      padding-bottom: 9px;
+    }
+    section.feeds{
+      padding-top: 9px;
+      padding: 60px 10px;
+    }
+    .detailpage-full-img .feed-content span {
+      font-size: 18px;
+    }
+    }
+    
+    @media screen and (max-width: 992px){
+      .showcase-container-2 {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    button.owl-next {
+      right: 4% !important;
+    }
+    button.owl-prev {
+      left: 3%;
+    }
+    }
+    @media screen and (max-width: 768px){
+      .mob-d-none{
+        display: none;
+      }
+      
+      .article-by {
+        flex: 0 0 100%;
+        flex-basis: 100%;
+        padding: 0;
+    }
+    
+    .story-inner-caption {
+      width: 100%;
+      flex: auto;
+      padding: 0;
+      margin-bottom: 6px;
+      margin-top: 6px;
+    }
+    
+    .story-social-icons {
+      padding: 0;
+      text-align: left;
+      padding-bottom: 10px;
+    }
+    
+    }
+    
+    @media screen and (max-width:767px){
+      .showcase-container-2 .owl-carousel .owl-nav{
+        display: none !important;
+      }
+    }
+    @media screen and (max-width:560px){
+      .l-magzine .item {
+        padding: 0;
+    }
+    
+    }
+    @media screen and (max-width:576px){
+      .l-magzine .owl-item {
+        margin-right: 17.1px !important;
+    }
+    }
+    @media screen and (max-width:425px){
+      .l-magzine .owl-item {
+        margin-right: 16.7px !important;
+    }
+    .l-magzine .owl-carousel .owl-item img {
+      width: 100%;
+      height: 100%;
+    }
+    /* .l-magzine .item .featured-image-global{
+      height: 370px;
+    } */
+    .col-sm-12.col-lg-6.m-content.feed-content P{
+      margin-bottom: 0;
+    }
+    .magazine-showcase .owl-carousel img {
+      border: 0;
+    }
+    article.s-card.Layout-vertical .feed-content h3{
+      height: auto;
+    }
+    .lts-magzine {
+      padding-bottom: 35px !important;
+    }
+    .heading-magazine {
+      line-height: 30px;
+    }
+    .l-magzine .item{
+      padding: 0 0;
+    }
+    .l-magzine {
+      padding: 0;
+    }
+      .featured-story-wrapper .featured-image-global {
+        height: auto;
+    }
+    .feed-content.featured-feed {
+      bottom: 16px;
+    }
+    .feed-content{
+      min-height: auto;
+    }
+    
+    }
+    
+    @media screen and (max-width:390px){
+      .detailpage-full-img .feed-content span {
+        font-size: 18px;
+      }
+      .l-magzine .item .featured-image-global {
+        height: 370px;
+    }
+    }
+    
+    @media screen and (max-width:375px){
+      .l-magzine .owl-item {
+        margin-right: 17.1px !important;
+    }
+      
+      .detailpage-full-img .feed-content span a{
+        height: auto;
+        font-size: 11px;
+      }
+      .detailpage-full-img .feed-content span {
+        font-size: 13px;
+      }
+      .vertical-line{
+        height: 14px;
+      }
+      .article-header .article-by{
+        width: 100%;
+      }
+      .article-header{
+        display: block;
+      }
+      .article-header .article-by{
+        padding-bottom: 2px;
+      }
+      .vertical-line{
+        margin-bottom: -2px;
+      }
+      .story-social-icons a:first-child{
+        margin-left: 0;
+      }
+    }
+    
+    @media screen and (max-width:320px){
+      .detailpage-full-img .feed-content span a{
+        font-size: 9px;
+      }
+    }
+    
+    
+    
+    button.owl-next {
+        right: -1%;
+        position: absolute;
+        /* background: transparent; */
+        background: linear-gradient(270deg,rgba(0,0,0,.75),transparent);
+        color: #fff;
+      font-size: 35px !important;
+    }
+    
+    .showcase-container .owl-nav.disabled {
+        left: -85px;
+        width: 110%;
+        position: absolute;
+        top: 120px;
+    }
+    
+    .showcase-container .owl-nav.disabled button span {
+        color: #e2e2e2;
+        font-size: 70px;
+    }
+    @media screen and (min-width: 1820px){
+      .showcase-container-2 {
+        padding-left: 3%;
+        padding-right: 3%;
+        max-width: 1780px;
+    }
+    button.owl-next {
+      right: -6%;
+    }
+    button.owl-prev {
+      left: -6%;
+    }
+    }
+        
+    </style>
+</head>
+<body>
+    <section class="magazine-showcase">
+        <h4 class="text-center heading-magazine text-white lts-magzine">Latest Magazine</h4>
+        <div class="container-fluid showcase-container-2 l-magzine">
+        <div class="owl-slider">
+        <div id="carousel" class="owl-carousel owl-loaded owl-drag">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="owl-stage-outer owl-height" style="height: 502px;"><div class="owl-stage" style="transition: all 0.8s ease 0s; width: 5984px; padding-left: 50px; padding-right: 50px; transform: translate3d(-1765px, 0px, 0px);"><div class="owl-item cloned" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/19/t-edit-06mar">
+        <div class="featured-image-global"><img class=" lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/TEM51650956645-0/TEM51650956645-0.gif" data-src="https://stage-cdn.tribune.com.pk/media/images/TEM51650956645-0/TEM51650956645-0.gif" alt="t edit 06march" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+        <div class="decription"><h3>MAGAZINE</h3>
+        <p>T-Edit 06March</p></div>
+        </a>
+        </div></div><div class="owl-item cloned" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/18/t-edit-13march">
+        <div class="featured-image-global"><img class=" lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/TEM41650956492-0/TEM41650956492-0.gif" data-src="https://stage-cdn.tribune.com.pk/media/images/TEM41650956492-0/TEM41650956492-0.gif" alt="t edit 13march" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+         <div class="decription"><h3>MAGAZINE</h3>
+        <p>T-Edit 13March</p></div>
+        </a>
+        </div></div><div class="owl-item cloned" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/17/t-edit-20march">
+        <div class="featured-image-global"><img class=" ls-is-cached lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/TEM31650956223-0/TEM31650956223-0.gif" data-src="https://stage-cdn.tribune.com.pk/media/images/TEM31650956223-0/TEM31650956223-0.gif" alt="t edit 20march" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+        <div class="decription"><h3>MAGAZINE</h3>
+        <p>T-Edit 20March</p></div>
+        </a>
+        </div></div><div class="owl-item cloned" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/16/t-edit-03april">
+        <div class="featured-image-global"><img class=" ls-is-cached lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/TEM21650955946-0/TEM21650955946-0.gif" data-src="https://stage-cdn.tribune.com.pk/media/images/TEM21650955946-0/TEM21650955946-0.gif" alt="t edit 03april" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+        <div class="decription"><h3>MAGAZINE</h3>
+        <p>T-Edit 03April</p></div>
+        </a>
+        </div></div><div class="owl-item cloned" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/15/t-edit-17april">
+        <div class="featured-image-global"><img class=" ls-is-cached lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/Capture1650955452-0/Capture1650955452-0.gif" data-src="https://stage-cdn.tribune.com.pk/media/images/Capture1650955452-0/Capture1650955452-0.gif" alt="t edit 17april" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+        <div class="decription"><h3>MAGAZINE</h3>
+        <p>T-Edit 17April</p></div>
+        </a>
+        </div></div><div class="owl-item" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/25/t-magazine-april10">
+        <div class="featured-image-global"><img class=" lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/apirl101650957807-0/apirl101650957807-0.png" data-src="https://stage-cdn.tribune.com.pk/media/images/apirl101650957807-0/apirl101650957807-0.png" alt="t magazine april10" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+        <div class="decription"><h3>MAGAZINE</h3>
+        <p>T Magazine April10</p></div>
+        </a>
+        </div></div><div class="owl-item active" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/24/t-magazine-march20">
+        <div class="featured-image-global"><img class=" lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/march201650958473-0/march201650958473-0.png" data-src="https://stage-cdn.tribune.com.pk/media/images/march201650958473-0/march201650958473-0.png" alt="t magazine march20" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+        <div class="decription"><h3>MAGAZINE</h3>
+        <p>T Magazine March20</p></div>
+        </a>
+        </div></div><div class="owl-item active" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/23/t-magazine-march13">
+        <div class="featured-image-global"><img class=" lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/march131650958291-0/march131650958291-0.png" data-src="https://stage-cdn.tribune.com.pk/media/images/march131650958291-0/march131650958291-0.png" alt="t magazine march13" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+        <div class="decription"><h3>MAGAZINE</h3>
+        <p>T Magazine March13</p></div>
+        </a>
+        </div></div><div class="owl-item active center" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/22/t-magazine-april17">
+        <div class="featured-image-global"><img class=" lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/april171650958127-0/april171650958127-0.png" data-src="https://stage-cdn.tribune.com.pk/media/images/april171650958127-0/april171650958127-0.png" alt="t magazine april17" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+        <div class="decription"><h3>MAGAZINE</h3>
+        <p>T Magazine April17</p></div>
+        </a>
+        </div></div><div class="owl-item active" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/20/t-edit-27february">
+        <div class="featured-image-global"><img class=" lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/TEM61650957251-0/TEM61650957251-0.gif" data-src="https://stage-cdn.tribune.com.pk/media/images/TEM61650957251-0/TEM61650957251-0.gif" alt="t edit 27february" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+        <div class="decription"><h3>MAGAZINE</h3>
+        <p>T-Edit 27February</p></div>
+        </a>
+        </div></div><div class="owl-item active" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/19/t-edit-06mar">
+        <div class="featured-image-global"><img class=" lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/TEM51650956645-0/TEM51650956645-0.gif" data-src="https://stage-cdn.tribune.com.pk/media/images/TEM51650956645-0/TEM51650956645-0.gif" alt="t edit 06march" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+        <div class="decription"><h3>MAGAZINE</h3>
+        <p>T-Edit 06March</p></div>
+        </a>
+        </div></div><div class="owl-item" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/18/t-edit-13march">
+        <div class="featured-image-global"><img class=" lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/TEM41650956492-0/TEM41650956492-0.gif" data-src="https://stage-cdn.tribune.com.pk/media/images/TEM41650956492-0/TEM41650956492-0.gif" alt="t edit 13march" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+         <div class="decription"><h3>MAGAZINE</h3>
+        <p>T-Edit 13March</p></div>
+        </a>
+        </div></div><div class="owl-item" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/17/t-edit-20march">
+        <div class="featured-image-global"><img class=" ls-is-cached lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/TEM31650956223-0/TEM31650956223-0.gif" data-src="https://stage-cdn.tribune.com.pk/media/images/TEM31650956223-0/TEM31650956223-0.gif" alt="t edit 20march" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+        <div class="decription"><h3>MAGAZINE</h3>
+        <p>T-Edit 20March</p></div>
+        </a>
+        </div></div><div class="owl-item" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/16/t-edit-03april">
+        <div class="featured-image-global"><img class=" ls-is-cached lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/TEM21650955946-0/TEM21650955946-0.gif" data-src="https://stage-cdn.tribune.com.pk/media/images/TEM21650955946-0/TEM21650955946-0.gif" alt="t edit 03april" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+        <div class="decription"><h3>MAGAZINE</h3>
+        <p>T-Edit 03April</p></div>
+        </a>
+        </div></div><div class="owl-item" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/15/t-edit-17april">
+        <div class="featured-image-global"><img class=" ls-is-cached lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/Capture1650955452-0/Capture1650955452-0.gif" data-src="https://stage-cdn.tribune.com.pk/media/images/Capture1650955452-0/Capture1650955452-0.gif" alt="t edit 17april" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+        <div class="decription"><h3>MAGAZINE</h3>
+        <p>T-Edit 17April</p></div>
+        </a>
+        </div></div><div class="owl-item cloned" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/25/t-magazine-april10">
+        <div class="featured-image-global"><img class=" lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/apirl101650957807-0/apirl101650957807-0.png" data-src="https://stage-cdn.tribune.com.pk/media/images/apirl101650957807-0/apirl101650957807-0.png" alt="t magazine april10" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+        <div class="decription"><h3>MAGAZINE</h3>
+        <p>T Magazine April10</p></div>
+        </a>
+        </div></div><div class="owl-item cloned" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/24/t-magazine-march20">
+        <div class="featured-image-global"><img class=" lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/march201650958473-0/march201650958473-0.png" data-src="https://stage-cdn.tribune.com.pk/media/images/march201650958473-0/march201650958473-0.png" alt="t magazine march20" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+        <div class="decription"><h3>MAGAZINE</h3>
+        <p>T Magazine March20</p></div>
+        </a>
+        </div></div><div class="owl-item cloned" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/23/t-magazine-march13">
+        <div class="featured-image-global"><img class=" lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/march131650958291-0/march131650958291-0.png" data-src="https://stage-cdn.tribune.com.pk/media/images/march131650958291-0/march131650958291-0.png" alt="t magazine march13" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+        <div class="decription"><h3>MAGAZINE</h3>
+        <p>T Magazine March13</p></div>
+        </a>
+        </div></div><div class="owl-item cloned" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/22/t-magazine-april17">
+        <div class="featured-image-global"><img class=" lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/april171650958127-0/april171650958127-0.png" data-src="https://stage-cdn.tribune.com.pk/media/images/april171650958127-0/april171650958127-0.png" alt="t magazine april17" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+        <div class="decription"><h3>MAGAZINE</h3>
+        <p>T Magazine April17</p></div>
+        </a>
+        </div></div><div class="owl-item cloned" style="width: 274.2px; margin-right: 20px;"><div class="item">
+        <a href="https://design.tribune.com.pk/t-magazine/20/t-edit-27february">
+        <div class="featured-image-global"><img class=" lazyloaded" width="" height="" loading="lazy" src="https://stage-cdn.tribune.com.pk/media/images/TEM61650957251-0/TEM61650957251-0.gif" data-src="https://stage-cdn.tribune.com.pk/media/images/TEM61650957251-0/TEM61650957251-0.gif" alt="t edit 27february" onerror="this.src='https://stage-cdn.tribune.com.pk/media/thumbs/logo-tribune1588976358-0-450x300.jpg';"></div>
+        <div class="decription"><h3>MAGAZINE</h3>
+        <p>T-Edit 27February</p></div>
+        </a>
+        </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
+        </div>
+        </div>
+        </section>
+
+
+        <div class="row justify-content-between">
+
+          <div class="ab border"></div>
+          <div class="abc border"></div>
+          <div class="abd border"></div>
+        </div>
+
+
+        <h1>ABCD </h1>
+        <h1><i>ABCD</i> </h1>
+        <!-- <div align="center"> -->
+          <img src="logo-1.png" width="240" height="170"/>
+        <!-- </div> -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" ></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script>
+  jQuery("#carousel").owlCarousel({
+    autoplay: true,
+    lazyLoad: true,
+    // stagePadding: 0,
+    loop: true,
+    center: true,
+    margin: 20,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    responsiveClass: true,
+    autoHeight: true,
+    autoplayTimeout: 7000,
+    smartSpeed: 800,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
+        stagePadding: 45,
+        merge:true,
+      },
+      425: {
+        items: 1,
+        nav: true,
+        stagePadding: 50,
+      },
+      540: {
+        items: 1,
+        nav: true,
+        stagePadding: 110,
+      },
+
+      600: {
+        items: 1,
+        nav: true,
+        stagePadding: 115,
+      },
+      700: {
+        items: 2,
+        nav: true,
+        stagePadding: 20,
+      },
+      800: {
+        items: 2,
+        nav: true,
+        stagePadding: 60,
+      },
+
+      900: {
+        items: 2,
+        nav: true,
+        stagePadding: 125,
+      },
+
+      1024: {
+        items: 3,
+        stagePadding: 20,
+      },
+      1199: {
+        items: 3,
+        stagePadding: 80,
+
+      },
+      1280: {
+        items: 4,
+        nav: true,
+        stagePadding: -20,
+      },
+      1300: {
+        items: 4,
+        nav: true,
+        margin:20,
+        center:false,
+        stagePadding: 0,
+      },
+      1450: {
+        items: 4,
+        nav: true,
+        center:false,
+        stagePadding: 30,
+      },
+      1600: {
+        items: 5,
+        nav: true,
+        stagePadding: 0,
+      }
+
+    }
+  });
+
+
+
+  $(window).scroll(function(){
+    if ($(window).scrollTop() >= 970) {
+        $('.sidebar-ad').addClass('ad-sticky');
+
+    }
+    else {
+        $('.sidebar-ad').removeClass('ad-sticky');
+    }
+});
+
+
+</script>
+</body>
+</html>
